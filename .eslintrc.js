@@ -16,11 +16,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    'prettier',
-    'react-hooks'
-  ],
+  plugins: ['react', 'prettier', 'react-hooks'],
   rules: {
     'prettier/prettier': 'error',
     'react/jsx-filename-extension': [
@@ -32,10 +28,14 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-param-reassign': 'off',
     'react/prefer-stateless-function': 'off',
-    'no-console': ["error", {
-      allow: ["tron"]
-    }],
+    'no-console': [
+      'error',
+      {
+        allow: ['tron'],
+      },
+    ],
+    'react/state-in-constructor': 'off',
     'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
-  }
+    'react-hooks/exhaustive-deps': 'warn',
+  },
 };
